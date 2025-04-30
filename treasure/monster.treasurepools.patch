@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "test",
+		"path" : "/monopusTreasure/0/1/pool/0/pool",
+		"value" : "basicMonsterTreasure"
+	},
+	{
+		"op" : "replace",
+		"path" : "/monopusTreasure/0/1/pool/0/pool",
+		"value" : "lofty_crispy_basicMonsterTreasureTentacle_raw"
+	}
+]

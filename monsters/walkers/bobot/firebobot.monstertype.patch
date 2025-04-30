@@ -1,0 +1,41 @@
+[
+	//add scorched core to fire bobot's default drop sets
+	
+    {
+		"op" : "replace",
+		"path" : "/dropPools/0/default",
+		"value" : "lofty_crispy_firebobotTreasure_basic"
+	},
+	
+	{
+		"op" : "replace",
+		"path" : "/dropPools/0/bow",
+		"value" : "lofty_crispy_firebobotHunting_basic"
+	},
+	
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebow",
+		"value" : "lofty_crispy_firebobotHunting_basic"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/icebow",
+		"value" : "lofty_crispy_firebobotHunting_basic"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/poisonbow",
+		"value" : "lofty_crispy_firebobotHunting_basic"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/electricbow",
+		"value" : "lofty_crispy_firebobotHunting_basic"
+	}
+]

@@ -1,0 +1,53 @@
+[
+	//verify alien meat is the first item in monopus drops before replacing it
+	[
+		{
+			"op" : "test",
+			"path" : "/monopusHunting/0/1/pool/0/item",
+			"value" : "alienmeat"
+		},
+		{
+			"op" : "replace",
+			"path" : "/monopusHunting/0/1/pool/0/item",
+			"value" : "rawtentacle"
+		}
+	],
+
+	//verify parasprite hunting values are defaults for items and weights before replacing weights
+	//normally parasprites have a 1% af drop rate
+	//the vanilla parasprite hunting table reduced that drop rate to 0.3% which seems like an error
+
+	[
+		{
+			"op" : "test",
+			"path" : "/paraspriteHunting/0/1/pool/0/item",
+			"value" : "sharpenedclaw"
+		},
+		{
+			"op" : "test",
+			"path" : "/paraspriteHunting/0/1/pool/0/weight",
+			"value" : "0.997"
+		},
+		{
+			"op" : "test",
+			"path" : "/paraspriteHunting/0/1/pool/1/item",
+			"value" : "paraspriteaf"
+		},
+		{
+			"op" : "test",
+			"path" : "/paraspriteHunting/0/1/pool/1/weight",
+			"value" : "0.003"
+		},
+		
+		{
+			"op" : "replace",
+			"path" : "/paraspriteHunting/0/1/pool/0/weight",
+			"value" : "0.98"
+		},
+		{
+			"op" : "replace",
+			"path" : "/paraspriteHunting/0/1/pool/1/weight",
+			"value" : "0.02"
+		}
+	]
+]

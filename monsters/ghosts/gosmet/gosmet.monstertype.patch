@@ -1,0 +1,27 @@
+[
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebow",
+		"value" : "gosmetHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/icebow",
+		"value" : "gosmetHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/poisonbow",
+		"value" : "gosmetHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/electricbow",
+		"value" : "gosmetHunting"
+	}
+]

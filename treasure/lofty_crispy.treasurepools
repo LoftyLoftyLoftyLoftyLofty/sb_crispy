@@ -1,0 +1,3121 @@
+{
+  // ================================
+  //        Need a light?
+  // ================================
+
+  "lofty_crispy_hunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.6, "item" : "cookedalienmeat"},
+        {"weight" : 0.4, "item" : "leather"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_huntingquadruped" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.3, "item" : "cookedalienmeat"},
+        {"weight" : 0.3, "item" : "cookedribmeat"},
+        {"weight" : 0.4, "item" : "leather"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_huntingflying" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "cookedpoultry"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_huntingswimming" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "cookedfish"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_huntingswimming_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "rawfish"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_basicMonsterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.89, "pool" : "money"},
+        {"weight" : 0.10, "item" : "cookedalienmeat"},
+        {"weight" : 0.01, "pool" : "basicTreasure"}
+      ]
+    }]
+  ],
+  
+  "lofty_crispy_basicMonsterTreasureTentacle" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.89, "pool" : "money"},
+        {"weight" : 0.10, "item" : "cookedtentacle"},
+        {"weight" : 0.01, "pool" : "basicTreasure"}
+      ]
+    }]
+  ],
+  
+  "lofty_crispy_basicMonsterTreasureTentacle_raw" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.89, "pool" : "money"},
+        {"weight" : 0.10, "item" : "rawtentacle"},
+        {"weight" : 0.01, "pool" : "basicTreasure"}
+      ]
+    }]
+  ],
+
+  "lofty_crispy_flyingMonsterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.89, "pool" : "money"},
+        {"weight" : 0.10, "item" : "cookedpoultry"},
+        {"weight" : 0.01, "pool" : "basicTreasure"}
+      ]
+    }]
+  ],
+
+  "lofty_crispy_smallfishtreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : [ "cookedfish", 1]}
+      ],
+      "poolRounds" : [
+        [0.7, 0],
+        [0.3, 1]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_crispy_largefishtreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.89, "pool" : "money"},
+        {"weight" : 0.10, "item" : "cookedfish"},
+        {"weight" : 0.01, "pool" : "basicTreasure"}
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_crispy_generatedGroundMonsterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.80, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.20, "item" : "leather"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "lofty_crispy_generatedFlyingMonsterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "pool" : "lofty_crispy_flyingMonsterTreasure"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  // ================================
+  //        Unique Monsters
+  // ================================
+  
+  "lofty_crispy_adultpoptopTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "adultpoptopaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_adultpoptopHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "adultpoptopaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_motherpoptopTreasure" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "corefragmentore", 20]},
+        {"pool" : "lofty_crispy_adultpoptopTreasure"}
+      ]
+    }]
+  ],
+  
+  "lofty_crispy_anglureTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "anglureaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_anglureHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "anglureaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_agrobatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_agrobatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceagrobatTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceagrobatHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawpoultry"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceagrobatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceagrobatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "agrobataf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_batongTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_batongHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonbatongTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonbatongHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawpoultry"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonbatongTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonbatongHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_bobfaeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_bobfaeHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonbobfaeTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonbobfaeHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonbobfaeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonbobfaeHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "bobfaeaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firebobotTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "robotTreasure"},
+        {"weight" : 0.100, "item" : "stickofram"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "bobotaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firebobotHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "bobotaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_poisonbulbopTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "bulbopaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonbulbopHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "livingroot"},
+        {"weight" : 0.499, "item" : "venomsample"},
+        {"weight" : 0.002, "item" : "bulbopaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_capricoatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_capricoatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electriccapricoatTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electriccapricoatHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electriccapricoatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electriccapricoatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "capricoataf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_cosmicintruderTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.999, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.001, "item" : "cosmicintruderaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_cosmicIntruderHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.998, "item" : "cookedalienmeat"},
+        {"weight" : 0.002, "item" : "cosmicintruderaf"}
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  //cosmic intruder doesn't have a vanilla hunting pool :(
+  "lofty_crispy_cosmicIntruderHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.998, "item" : "alienmeat"},
+        {"weight" : 0.002, "item" : "cosmicintruderaf"}
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_crabcanoTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_crabcanoHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icecrabcanoTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icecrabcanoHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icecrabcanoTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icecrabcanoHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "crabcanoaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icecrustoiseTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "crustoiseaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icecrustoiseHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "hardenedcarapace"},
+        {"weight" : 0.499, "item" : "cryonicextract"},
+        {"weight" : 0.002, "item" : "crustoiseaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_crutterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_crutterHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electriccrutterTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electriccrutterHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electriccrutterTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electriccrutterHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "crutteraf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_fennixTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_fennixHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icefennixTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icefennixHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icefennixTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icefennixHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "fennixaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firegleapTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "gleapaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firegleapHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "livingroot"},
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.002, "item" : "gleapaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firegosmetTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "gosmetaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firegosmetHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.002, "item" : "gosmetaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_hemogoblinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_hemogoblinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedribmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electrichemogoblinTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electrichemogoblinHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawribmeat"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electrichemogoblinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electrichemogoblinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedribmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "hemogoblinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icehypnareTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "hypnareaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icehypnareHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "livingroot"},
+        {"weight" : 0.499, "item" : "cryonicextract"},
+        {"weight" : 0.002, "item" : "hypnareaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricignomeTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "ignomeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricignomeHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.002, "item" : "ignomeaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_iguarmorTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "iguarmoraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iguarmorHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "hardenedcarapace"},
+		    {"weight" : 0.001, "item" : "iguarmoraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceiguarmorTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "pool" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "iguarmoraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceiguarmorHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+		    {"weight" : 0.001, "item" : "iguarmoraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceiguarmorTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "pool" : "cryonicextract"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "iguarmoraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceiguarmorHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+		    {"weight" : 0.001, "item" : "iguarmoraf"}
+      ]
+    } ]
+  ],
+  
+  //no ixoling hunting table or drops that would warrant crispy intervention
+  
+  //no kluex sentry hunting table or drops that would warrant crispy intervention
+  
+  //no kluex totem hunting table or drops that would warrant crispy intervention
+
+  "lofty_crispy_lilodonTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_lilodonHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firelilodonTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firelilodonHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firelilodonTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firelilodonHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "lilodonaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firelumothTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "robotTreasure"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "lumothaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firelumothHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.002, "item" : "lumothaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  "lofty_crispy_poisonmandrafloraTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "mandrafloraaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonmandrafloraHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "livingroot"},
+        {"weight" : 0.499, "item" : "venomsample"},
+        {"weight" : 0.002, "item" : "mandrafloraaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_monopusTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasureTentacle"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_monopusHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedtentacle"},
+        {"weight" : 0.400, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firemonopusTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasureTentacle"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firemonopusHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedtentacle"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firemonopusTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasureTentacle_raw"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firemonopusHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawtentacle"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "monopusaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_narfinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "narfinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_narfinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "narfinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonnutmidgelingTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "nutmidgeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonnutmidgelingHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "livingroot"},
+        {"weight" : 0.499, "item" : "venomsample"},
+        {"weight" : 0.002, "item" : "nutmidgeaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_fireoculobTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "oculobaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_fireoculobHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.998, "item" : "scorchedcore"},
+        {"weight" : 0.002, "item" : "oculobaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_ooglerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_ooglerHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_fireooglerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_fireooglerHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.449, "item" : "cookedalienmeat"},
+        {"weight" : 0.150, "item" : "scorchedcore"},
+        {"weight" : 0.150, "item" : "leather"},
+        {"weight" : 0.150, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_fireooglerTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_fireooglerHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.449, "item" : "alienmeat"},
+        {"weight" : 0.150, "item" : "scorchedcore"},
+        {"weight" : 0.150, "item" : "leather"},
+        {"weight" : 0.150, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "oogleraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceorbideTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "orbideaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceorbideHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "sharpenedclaw"},
+        {"weight" : 0.499, "item" : "cryonicextract"},
+        {"weight" : 0.002, "item" : "orbideaf"}
+      ]
+    } ]
+  ],
+  
+  //parasprite is unique in that it only drops meat when not using hunting weapons
+
+  "lofty_crispy_paraspriteTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.79, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.20, "item" : "sharpenedclaw"},
+        {"weight" : 0.01, "item" : "paraspriteaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+
+  "lofty_crispy_paratailTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_paratailHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  "lofty_crispy_poisonparatailTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonparatailHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  "lofty_crispy_poisonparatailTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonparatailHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "paratailaf"}
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  "lofty_crispy_icepeblitTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "peblitaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icepeblitHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "hardenedcarapace"},
+        {"weight" : 0.499, "item" : "cryonicextract"},
+        {"weight" : 0.002, "item" : "peblitaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_petricubTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_petricubHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricpetricubTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricpetricubHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricpetricubTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricpetricubHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "petricubaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonpipkinTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "stickofram"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pipkinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_pipkinHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.499, "item" : "venomsample"},
+        {"weight" : 0.002, "item" : "pipkinaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_poptopTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "poptopaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poptopHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "poptopaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_pteropodTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pteropodaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_pteropodHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+		{"weight" : 0.001, "item" : "pteropodaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firepteropodTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "pteropodaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firepteropodHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "scorchedcore"},
+		{"weight" : 0.001, "item" : "pteropodaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firepteropodTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "pteropodaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firepteropodHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "scorchedcore"},
+		{"weight" : 0.001, "item" : "pteropodaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_pulpinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_pulpinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonpulpinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonpulpinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonpulpinTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonpulpinHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pulpinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonpyromantleTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "pyromantleaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonpyromantleHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.998, "item" : "venomsample"},
+        {"weight" : 0.002, "item" : "pyromantleaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_quagmuttTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "quagmuttaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_quagmuttHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "guagmuttaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricquagmuttTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "quagmuttaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricquagmuttHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "guagmuttaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricquagmuttTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "quagmuttaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricquagmuttHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "guagmuttaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_ringramTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_ringramHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceringramTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceringramHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_iceringramTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_iceringramHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "ringramaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_scaveranTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_scaveranHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonscaveranTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonscaveranHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonscaveranTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonscaveranHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawpoultry"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "scaveranaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricskimbusTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "skimbusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricskimbusHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.002, "item" : "skimbusaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_smoglinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_smoglinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonsmoglinTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonsmoglinHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonsmoglinTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonsmoglinHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "smoglinaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_snagglerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_snagglerHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icesnagglerTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icesnagglerHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_icesnagglerTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_icesnagglerHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.400, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snaggleraf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_snauntTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_snauntHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricsnauntTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricsnauntHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electricsnauntTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricsnauntHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.200, "item" : "hardenedcarapace"},
+        {"weight" : 0.001, "item" : "snauntaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_snuffishTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_largefishtreasure"},
+        {"weight" : 0.200, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_snuffishHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedfish"},
+        {"weight" : 0.400, "item" : "cryonicextract"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonsnuffishTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_largefishtreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonsnuffishHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedfish"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisonsnuffishTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "largefishtreasure"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisonsnuffishHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawfish"},
+        {"weight" : 0.400, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "snuffishaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firespookitTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "spookitaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firespookitHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.002, "item" : "spookitaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_squeemTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_squeemHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firesqueemTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firesqueemHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "phasematter"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firesqueemTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firesqueemHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "phasematter"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "squeemaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_taroniTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_taroniHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firetaroniTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firetaroniHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firetaroniTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "leather"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firetaroniHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "taroniaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_electrictinticTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "tinticaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electrictinticHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "hardenedcarapace"},
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.002, "item" : "tinticaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_toumingoTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_toumingoHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firetoumingoTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firetoumingoHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedpoultry"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firetoumingoTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "flyingMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firetoumingoHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "rawpoultry"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "scorchedcore"},
+        {"weight" : 0.001, "item" : "toumingoaf"}
+      ]
+    } ]
+  ],
+
+  "lofty_crispy_trictusTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "livingroot"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_trictusHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "livingroot"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisontrictusTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisontrictusHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "livingroot"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_poisontrictusTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "livingroot"},
+        {"weight" : 0.100, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_poisontrictusHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "livingroot"},
+        {"weight" : 0.200, "item" : "venomsample"},
+        {"weight" : 0.001, "item" : "trictusaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_crispy_firewisperTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.100, "item" : "scorchedcore"},
+        {"weight" : 0.100, "item" : "phasematter"},
+        {"weight" : 0.001, "item" : "wisperaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_firewisperHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "scorchedcore"},
+        {"weight" : 0.499, "item" : "phasematter"},
+        {"weight" : 0.002, "item" : "wisperaf"}
+      ],
+      "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+
+  "lofty_crispy_yokatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_yokatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricyokatTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_crispy_basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricyokatHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricyokatTreasure_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.100, "item" : "sharpenedclaw"},
+        {"weight" : 0.100, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_crispy_electricyokatHunting_basic" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.200, "item" : "staticcell"},
+        {"weight" : 0.001, "item" : "yokataf"}
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  // ================================
+  //       Fishing
+  // ================================
+  
+  "lofty_crispy_fishingcommon" : [
+    [0, {
+      "fill" : [
+        {"item" : "cookedfish"}
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "money"}
+      ],
+      "poolRounds" : [
+        [0.7, 0],
+        [0.3, 1]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_crispy_fishinguncommon" : [
+    [0, {
+      "fill" : [
+        {"item" : "cookedfish"}
+      ],
+      "pool" : [
+        {"weight" : 0.97, "pool" : "money"},
+        {"weight" : 0.03, "pool" : "fishingUpgrade"}
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_crispy_fishingrare" : [
+    [0, {
+      "fill" : [
+        {"item" : "cookedfish"}
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "fishingPrize"}
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_crispy_fishinglegendary" : [
+    [0, {
+      "fill" : [
+        {"item" : "cookedfish"},
+        {"pool" : "chestMoney"},
+        {"pool" : "chestMoney"}
+      ],
+      "pool" : [
+        {"weight" : 0.5, "pool" : "fishingGrandPrize"}
+      ],
+      "allowDuplication" : true
+    }]
+  ]
+}

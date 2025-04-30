@@ -1,0 +1,103 @@
+[
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/fire",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	// Melee fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/heat",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/fireaxe",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebarrier",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebroadsword",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firedagger",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firehammer",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firespear",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	// Ranged fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/flamethrower",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/fireplasmashotgun",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/fireplasma",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/fireplasmabullet",
+		"value" : "lofty_crispy_poptopTreasure"
+	},
+	
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebow",
+		"value" : "lofty_crispy_poptopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/icebow",
+		"value" : "poptopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/poisonbow",
+		"value" : "poptopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/electricbow",
+		"value" : "poptopHunting"
+	}
+]

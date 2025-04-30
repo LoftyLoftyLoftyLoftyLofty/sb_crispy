@@ -1,0 +1,115 @@
+[
+	{
+		"op" : "test",
+		"path" : "/baseParameters/landedTreasurePool",
+		"value" : "fishingcommon"
+	},
+	
+	{
+		"op" : "replace",
+		"path" : "/baseParameters/landedTreasurePool",
+		"value" : { "default" : "fishingcommon" }
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fire",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	// Melee fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/heat",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireaxe",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebarrier",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebroadsword",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firedagger",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firehammer",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firespear",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	// Ranged fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/flamethrower",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasmashotgun",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasma",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasmabullet",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebow",
+		"value" : "lofty_crispy_fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/icebow",
+		"value" : "fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/poisonbow",
+		"value" : "fishingcommon"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/electricbow",
+		"value" : "fishingcommon"
+	}
+]

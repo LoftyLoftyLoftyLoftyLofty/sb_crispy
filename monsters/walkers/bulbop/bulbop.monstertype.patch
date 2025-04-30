@@ -1,0 +1,27 @@
+[
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/firebow",
+		"value" : "bulbopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/icebow",
+		"value" : "bulbopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/poisonbow",
+		"value" : "bulbopHunting"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/electricbow",
+		"value" : "bulbopHunting"
+	}
+]

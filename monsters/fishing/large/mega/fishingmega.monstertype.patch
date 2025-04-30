@@ -1,0 +1,115 @@
+[
+	{
+		"op" : "test",
+		"path" : "/baseParameters/landedTreasurePool",
+		"value" : "fishinglegendary"
+	},
+	
+	{
+		"op" : "replace",
+		"path" : "/baseParameters/landedTreasurePool",
+		"value" : { "default" : "fishinglegendary" }
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fire",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	// Melee fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/heat",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireaxe",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebarrier",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebroadsword",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firedagger",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firehammer",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firespear",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	// Ranged fire damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/flamethrower",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasmashotgun",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasma",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/fireplasmabullet",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	// Fire + Hunting damage types
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/firebow",
+		"value" : "lofty_crispy_fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/icebow",
+		"value" : "fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/poisonbow",
+		"value" : "fishinglegendary"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/baseParameters/landedTreasurePool/electricbow",
+		"value" : "fishinglegendary"
+	}
+]
