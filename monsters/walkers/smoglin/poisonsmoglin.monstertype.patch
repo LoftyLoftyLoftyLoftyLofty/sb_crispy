@@ -1,17 +1,71 @@
 [
+[
 	//add venom sample to poison smoglin's default drop sets
-	
+	//poison smoglin doesn't have drop sets by default so we have to fix those first
+	{
+		"op" : "test",
+		"path" : "/dropPools/0",
+		"inverse" : true
+	},
+	{
+		"op" : "replace",
+		"path" : "/dropPools",
+		"value" : 
+		[
+			{ 
+				"default" : "lofty_crispy_poisonsmoglinTreasure_basic", 
+				"bow" : "lofty_crispy_poisonsmoglinHunting_basic" 
+			}
+		]
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/default"
+	},
     {
 		"op" : "replace",
 		"path" : "/dropPools/0/default",
 		"value" : "lofty_crispy_poisonsmoglinTreasure_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/bow"
 	},
-	
 	{
 		"op" : "replace",
 		"path" : "/dropPools/0/bow",
 		"value" : "lofty_crispy_poisonsmoglinHunting_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/default",
+		"inverse" : true
 	},
+    {
+		"op" : "add",
+		"path" : "/dropPools/0/default",
+		"value" : "lofty_crispy_poisonsmoglinTreasure_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/bow",
+		"inverse" : true
+	},
+	{
+		"op" : "replace",
+		"path" : "/dropPools/0/bow",
+		"value" : "lofty_crispy_poisonsmoglinHunting_basic"
+	}
+],
+[
 
 	{
 		"op" : "add",
@@ -114,4 +168,5 @@
 		"path" : "/dropPools/0/electricbow",
 		"value" : "lofty_crispy_poisonsmoglinHunting_basic"
 	}
+]
 ]

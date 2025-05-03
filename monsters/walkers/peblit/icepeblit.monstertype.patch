@@ -1,5 +1,17 @@
 [
-
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0",
+		"inverse" : true
+	},
+	{
+		"op" : "add",
+		"path" : "/dropPools",
+		"value" : [{ "default" : "lofty_crispy_icepeblitTreasure_basic", "hunting" : "lofty_crispy_icepeblitHunting_basic" }]
+	}
+],
+[
 	//add cryonic extract to ice peblit's default drop sets
 	
     {
@@ -39,4 +51,5 @@
 		"path" : "/dropPools/0/electricbow",
 		"value" : "lofty_crispy_icepeblitHunting_basic"
 	}
+]
 ]

@@ -1,4 +1,17 @@
 [
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0",
+		"inverse" : true
+	},
+	{
+		"op" : "add",
+		"path" : "/dropPools",
+		"value" : [{ "default" : "voltipTreasure", "bow" : "voltipHunting" }]
+	}
+],
+[
 	// Fire + Hunting damage types
 	
 	{
@@ -24,4 +37,5 @@
 		"path" : "/dropPools/0/electricbow",
 		"value" : "voltipHunting"
 	}
+]
 ]

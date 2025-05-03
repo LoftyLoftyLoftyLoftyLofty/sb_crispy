@@ -1,19 +1,64 @@
 [
-
-	//add cryonic extract to ice fennix' default drop sets
-	
+//add scorched core to fire gleap's default drop sets
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0",
+		"inverse" : true
+	},
+	{
+		"op" : "replace",
+		"path" : "/dropPools",
+		"value" : [{ "default" : "lofty_crispy_firegleapTreasure_basic", "bow" : "lofty_crispy_firegleapHunting_basic" }]
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/default"
+	},
     {
 		"op" : "replace",
 		"path" : "/dropPools/0/default",
 		"value" : "lofty_crispy_firegleapTreasure_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/default",
+		"inverse" : true
 	},
-	
+    {
+		"op" : "add",
+		"path" : "/dropPools/0/default",
+		"value" : "lofty_crispy_firegleapTreasure_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/bow"
+	},
 	{
 		"op" : "replace",
 		"path" : "/dropPools/0/bow",
 		"value" : "lofty_crispy_firegleapHunting_basic"
+	}
+],
+[
+	{
+		"op" : "test",
+		"path" : "/dropPools/0/bow",
+		"inverse" : true
 	},
-	
+	{
+		"op" : "add",
+		"path" : "/dropPools/0/bow",
+		"value" : "lofty_crispy_firegleapHunting_basic"
+	}
+],
+[	
 	// Fire + Hunting damage types
 	
 	{
@@ -39,4 +84,5 @@
 		"path" : "/dropPools/0/electricbow",
 		"value" : "lofty_crispy_firegleapHunting_basic"
 	}
+]
 ]

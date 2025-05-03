@@ -1,41 +1,62 @@
 [
-	//add venom sample to poison nutmidge's default drop sets
-	
-    {
-		"op" : "replace",
-		"path" : "/dropPools/0/default",
-		"value" : "lofty_crispy_poisonnutmidgelingTreasure_basic"
-	},
-	
-	{
-		"op" : "replace",
-		"path" : "/dropPools/0/bow",
-		"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
-	},
+	[
+		//add venom sample to poison nutmidge's default drop sets
+		
+		{
+			"op" : "replace",
+			"path" : "/dropPools/0/default",
+			"value" : "lofty_crispy_poisonnutmidgelingTreasure_basic"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/dropPools/0/bow"
+		},
+		{
+			"op" : "replace",
+			"path" : "/dropPools/0/bow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/dropPools/0/bow",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/dropPools/0/bow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		}
+	],
+	[
 
-	// Fire + Hunting damage types
-	
-	{
-		"op" : "add",
-		"path" : "/dropPools/0/firebow",
-		"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/dropPools/0/icebow",
-		"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/dropPools/0/poisonbow",
-		"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
-	},
-	
-	{
-		"op" : "add",
-		"path" : "/dropPools/0/electricbow",
-		"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
-	}
+		// Fire + Hunting damage types
+		
+		{
+			"op" : "add",
+			"path" : "/dropPools/0/firebow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/dropPools/0/icebow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/dropPools/0/poisonbow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		},
+		
+		{
+			"op" : "add",
+			"path" : "/dropPools/0/electricbow",
+			"value" : "lofty_crispy_poisonnutmidgelingHunting_basic"
+		}
+	]
 ]
