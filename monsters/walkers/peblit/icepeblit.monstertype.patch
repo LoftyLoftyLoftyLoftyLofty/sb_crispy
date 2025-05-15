@@ -8,7 +8,7 @@
 	{
 		"op" : "add",
 		"path" : "/dropPools",
-		"value" : [{ "default" : "lofty_crispy_icepeblitTreasure_basic", "hunting" : "lofty_crispy_icepeblitHunting_basic" }]
+		"value" : [{ "default" : "lofty_crispy_icepeblitTreasure_basic", "bow" : "lofty_crispy_icepeblitHunting_basic" }]
 	}
 ],
 [
